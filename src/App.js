@@ -3,6 +3,7 @@ import './css/App.css';
 
 import Header from './Components/Header/Header';
 import About from './Components/About';
+import Footer from './Components/Footer/Footer';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
         <div className="container card-cont">
           <About />
         </div>
+        <Footer />
       </div>
     );
   }
