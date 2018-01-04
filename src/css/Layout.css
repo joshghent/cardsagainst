@@ -1,0 +1,15 @@
+.container {
+  clear: both;
+  display: block;
+}
+
+.row {
+  display: block;
+  width: 100%;
+}
+
+.col-6 {
+  display: block;
+  float: left;
+  width: 50%;
+}

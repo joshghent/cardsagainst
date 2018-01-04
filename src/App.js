@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import './css/App.css';
+
 import Header from './Components/Header/Header';
-import './App.css';
+import About from './Components/About';
 
 class App extends Component {
   render() {
@@ -8,8 +10,11 @@ class App extends Component {
       <div className="App">
         <Header />
         <header className="App-header">
-          <h1 className="App-title">Bards against Bumanity</h1>
+          <h1>Bards against Bumanity</h1>
         </header>
+        <div className="container card-cont">
+          <About />
+        </div>
       </div>
     );
   }
