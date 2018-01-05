@@ -48,6 +48,8 @@ const Routes = () => (
 				<Route path="/about" component={About} />
 				<Route path="/contact" component={Contact} />
 				<Route path="/play" component={Games} />
+				<Route path="/lobby/:id" component={Games} />
+				<Route path="/profile/:username" component={Games} />
 				<Route component={NoMatch} />
 			</Switch>
 		</div>
@@ -63,6 +65,7 @@ const Games = () =>(
 	</Switch>
 );
 
+// 404 route
 const NoMatch = ({ location }) => (
 	<div>
 		<h3>Sorry we couldn't find the requested page - <code>{location.pathname}</code></h3>
