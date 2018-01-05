@@ -43,11 +43,13 @@ const Routes = () => (
 
 			<hr/>
 
-			<Route exact path="/" component={Home} />
-			<Route path="/about" component={About} />
-			<Route path="/contact" component={Contact} />
-			<Route path="/play" component={Games} />
-			<Route component={NoMatch} />
+			<Switch>
+				<Route exact path="/" component={Home} />
+				<Route path="/about" component={About} />
+				<Route path="/contact" component={Contact} />
+				<Route path="/play" component={Games} />
+				<Route component={NoMatch} />
+			</Switch>
 		</div>
 	</Router>
 );
